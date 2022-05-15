@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 const mongoose = require('mongoose')
 const authRoute = require('./routes/auth')
 const userRoute = require('./routes/users')
-const PORT = process.env.PORT || 3000
+const PORT = process.env.END_PORT || 3000
 
 dotenv.config()
 app.use(express.urlencoded({extended: false}))
